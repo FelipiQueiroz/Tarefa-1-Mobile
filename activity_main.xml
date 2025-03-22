@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Botões para os exercícios -->
+        <Button
+            android:id="@+id/btnEx1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercício 1 - Maioridade" />
+
+        <Button
+            android:id="@+id/btnEx2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercício 2 - Calculadora"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnEx3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercício 3 - Cadastro Usuário"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnEx4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercício 4 - CheckBox Nome"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnEx5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercício 5 - Preferências"
+            android:layout_marginTop="8dp" />
+
+        <!-- Elementos do Exercício 1 -->
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua idade"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Elementos do Exercício 2 -->
+        <EditText
+            android:id="@+id/editValor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor 1"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editValor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor 2"
+            android:inputType="numberDecimal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btnSubtracao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btnMultiplicacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="×" />
+
+            <Button
+                android:id="@+id/btnDivisao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="÷" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtResultadoCalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado da Calculadora"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Elementos do Exercício 4 -->
+        <LinearLayout
+            android:id="@+id/layoutCheckboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Elementos do Exercício 5 -->
+        <CheckBox
+            android:id="@+id/checkNotificacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receber notificações"
+            android:layout_marginTop="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkModoEscuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo escuro" />
+
+        <CheckBox
+            android:id="@+id/checkLembrarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lembrar login" />
+
+    </LinearLayout>
+</ScrollView>
